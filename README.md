@@ -1,6 +1,6 @@
 # vue-ssr-memory-leak-example
 
-Detonate your server without fire，ahaha.
+Detonate your server without fire.
 
 WHAT WE SHOULD DO BEFORE:
 - `$ npm run server`
