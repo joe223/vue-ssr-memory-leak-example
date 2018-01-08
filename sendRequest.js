@@ -6,8 +6,9 @@ let init = 0
 
 const id = setInterval(() => {
     for (let i = 0; i < speed; i ++) {
-        console.log(init)
         axios.get('http://localhost:3000')
+            .then(res => console.log('success'))
+            .catch(err => console.log('fail'))
     }
     init += speed
 }, 1000)

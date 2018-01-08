@@ -18,12 +18,12 @@ server.get('*', (req, res) => {
     const diff = currentVal - initVal
     process.stdout.clearLine()
     process.stdout.cursorTo(0)
-    process.stdout.write("memory: " + currentVal);
-    if (diff >= 0) {
-        ++times;
-        initVal = currentVal
-        console.log(`\r\n${times}:, ${initVal}`)
-    }
+    process.stdout.write("memory (MB): " + currentVal);
+    // if (diff >= 0) {
+    //     ++times;
+    //     initVal = currentVal
+    //     console.log(`\r\n${times}:, ${initVal}`)
+    // }
 })
 
 server.listen(3000, () => { console.log('start server')})

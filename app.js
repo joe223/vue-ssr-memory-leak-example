@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import router from './router'
 const t = 'text'.repeat(10**6)
+
 Vue.use([]) // memory leak
 
 Vue.component('c', {
